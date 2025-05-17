@@ -1,0 +1,174 @@
+/* 
+   G-Ventures Project Page Styling
+*/
+
+:root {
+    --olive-green: #6B6C3E;
+    --text-light: #f1f1f1;
+}
+
+/* Project Header */
+.project-header {
+    background-color: var(--olive-green);
+    padding: 2rem 1rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.project-title h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Project Showcase */
+.project-showcase {
+    padding: 0;
+    background-color: var(--olive-green);
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.showcase-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.main-image {
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .showcase-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshots-grid {
+        margin-top: 1rem;
+    }
+}
+
+/* Project Description */
+.project-description {
+    padding: 5rem 1rem;
+    background-color: #f9f3e5;
+}
+
+.description-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.description-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.description-content h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin: 2rem 0 1rem;
+}
+
+.description-content p, 
+.description-content li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.tech-stack span {
+    background-color: #e9e9e9;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.back-button {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--olive-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .project-title h1 {
+        font-size: 3rem;
+    }
+    
+    .description-content h2 {
+        font-size: 2rem;
+    }
+    
+    .description-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+}
