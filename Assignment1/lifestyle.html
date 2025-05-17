@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Photography | Muhammad Luqmannulhakim</title>
+    
+    <!-- Font Awesome for icons - load this first -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Original stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- New interactive styles -->
+    <link rel="stylesheet" href="css/lifestyle-interactive.css">
+    
+    <!-- Photography Tip Cards styles -->
+    <link rel="stylesheet" href="css/photography-tip-cards.css">
+    
+    <!-- Ensure content is visible -->
+    <style>
+        /* Emergency styles to ensure content is visible */
+        .lifestyle-card, .social-post, .poll-container {
+            display: block !important;
+            opacity: 1 !important;
+            transform: none !important;
+        }
+        
+        /* Make sure the grid is displayed */
+        .lifestyle-grid, .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Basic card styling */
+        .lifestyle-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        /* Ensure images are visible */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">ML</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="lifestyle.html" class="active">Lifestyle</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <!-- Dark/light mode toggle will be added by JavaScript -->
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="lifestyle-main">
+        <!-- Lifestyle Banner -->
+        <section class="lifestyle-banner">
+            <div class="banner-content">
+                <h1>Food Photography</h1>
+                <p>Capturing the art, culture, and passion behind every dish</p>
+            </div>
+        </section>
+
+        <!-- My Food Photography Journey Section -->
+        <section class="lifestyle-section">
+            <div class="section-header">
+                <h2>My Food Photography Journey</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-card">
+                    <div class="card-image">
+                        <img src="images/foods/mango.jpg" alt="Camera and food setup" onerror="this.src='https://via.placeholder.com/400x300?text=Food+Photography'">
+                    </div>
+                    <div class="card-content">
+                        <h3>How I Started</h3>
+                        <p class="card-date"><i class="far fa-calendar-alt"></i> April 15, 2025</p>
+                        <p>
+                            My journey into food photography began as a hobby during my university days. I was fascinated by how food could be transformed into art through the lens of a camera. I started experimenting with different styles and techniques, and soon it became a passion that I wanted to share with the world.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <div class="card-image">
+                        <img src="images/foods/iphone16pro.jpeg" alt="Photography equipment" onerror="this.src='https://via.placeholder.com/400x300?text=Photography+Equipment'">
+                    </div>
+                    <div class="card-content">
+                        <h3>Equipment</h3>
+                        <p class="card-date"><i class="far fa-calendar-alt"></i> April 8, 2025</p>
+                        <p>
+                            I primarily use my iPhone 16 Pro for food photography, which allows me to capture high-quality images on the go. I also utilize various props and backgrounds to enhance the visual appeal of my shots. My setup is simple yet effective, focusing on natural light and minimal editing.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <div class="card-image">
+                        <img src="images/foods/watermelon.jpg" alt="Food styling techniques" onerror="this.src='https://via.placeholder.com/400x300?text=Food+Styling'">
+                    </div>
+                    <div class="card-content">
+                        <h3>Techniques I've Learned</h3>
+                        <p class="card-date"><i class="far fa-calendar-alt"></i> March 27, 2025</p>
+                        <p>
+                            Over the years, I've honed my skills in food styling and composition. I believe that the way food is presented can significantly impact its appeal. I enjoy experimenting with different angles, lighting, and props to create visually stunning images that tell a story.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section class="lifestyle-section" style="background-color: #69663a; color: white;">
+            <div class="section-header">
+                <h2 style="color: white;">Featured Work</h2>
+                <div class="underline" style="background: white;"></div>
+            </div>
+            
+            <div class="featured-travel">
+                <div class="featured-image">
+                    <img src="images/foods/pizza.jpg" alt="Signature food photograph" onerror="this.src='https://via.placeholder.com/600x400?text=Featured+Food+Photography'">
+                </div>
+                <div class="featured-content" style="color: white;">
+                    <h3>My Food Series</h3>
+                    <p class="featured-date"><i class="far fa-calendar-alt"></i> April 18, 2025</p>
+                    <p>
+                        This series captures the vibrant street food culture of Malaysia, showcasing the diverse flavors and culinary traditions that make it unique. Each photograph tells a story of the people, places, and passion behind the food.
+                    </p>
+                </div>
+            </div>
+        </section>        
+        <!-- Instagram Feed Section -->
+        <section class="social-feed" style="background-color: #f9f3e5;">
+            <div class="section-header">
+                <h2>Food Gallery Highlights</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="social-grid">
+                <div class="social-post">
+                    <img src="images/foods/pasta.jpg" alt="Instagram food post" onerror="this.src='https://via.placeholder.com/400x400?text=Food+Post+1'">
+                    <div class="post-info">
+                        <p class="post-caption">Actually, it's a creamy seafood pasta dish—but the lighting does make it pop! This photo is all about texture and balance in a vibrant patterned bowl.#FoodStyling #SeafoodLover</p>
+                        <p class="post-date">3 days ago</p>
+                    </div>
+                </div>
+                <div class="social-post">
+                    <img src="images/foods/fries.jpg" alt="Instagram food post" onerror="this.src='https://via.placeholder.com/400x400?text=Food+Post+2'">
+                    <div class="post-info">
+                        <p class="post-caption">The star here is those crispy sweet potato fries paired with a rich dip. While teh tarik isn't in frame, the motion and warmth in the setup still deliver a cozy café vibe.#TeaTales #CaféLife</p>
+                        <p class="post-date">1 week ago</p>
+                    </div>
+                </div>
+                <div class="social-post">
+                    <img src="images/foods/dessert.jpg" alt="Instagram food post" onerror="this.src='https://via.placeholder.com/400x400?text=Food+Post+3'">
+                    <div class="post-info">
+                        <p class="post-caption">This one nails the café aesthetic. From the moody lighting to the soft textures of the dessert and drink—this setup plays with contrast beautifully.#MoodFood #ChocolateCravings</p>
+                        <p class="post-date">2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Tip Cards Section (replacing poll section) -->
+        <section class="tip-cards-section">
+            <div class="section-header">
+                <h2>Photography Tips & Tricks</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="tip-cards-container">
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-lightbulb tip-icon"></i>
+                            <h3 class="tip-title">Lighting Is Everything</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">When shooting food, natural light is your best friend. Position your dish near a window but avoid direct sunlight. Use a white foam board to bounce light and fill shadows on the opposite side.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-camera-retro tip-icon"></i>
+                            <h3 class="tip-title">Find Your Angle</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">Every dish has its perfect angle. Flat foods like pizza look best from above (90°), while layered dishes like burgers shine from a 45° angle. Experiment to find what showcases the food's best features.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-palette tip-icon"></i>
+                            <h3 class="tip-title">Color Theory</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">Use complementary colors to make your food pop. A green garnish on a red tomato soup creates visual interest. Choose plates and backgrounds that enhance, not compete with, your food's natural colors.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-crop-alt tip-icon"></i>
+                            <h3 class="tip-title">Composition Matters</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">Apply the rule of thirds to your food photos. Place your main subject at intersection points rather than center. Create depth by having elements in foreground, middle ground, and background.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-sliders-h tip-icon"></i>
+                            <h3 class="tip-title">Subtle Editing</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">Less is more with food photo editing. Slightly increase contrast, selectively brighten key highlights, and enhance vibrance rather than saturation. Maintain natural colors that make viewers hungry!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-card-inner">
+                        <div class="tip-card-front">
+                            <i class="fas fa-mortar-pestle tip-icon"></i>
+                            <h3 class="tip-title">Food Styling Secrets</h3>
+                            <span class="tip-card-hint">Tap to flip</span>
+                        </div>
+                        <div class="tip-card-back">
+                            <p class="tip-text">Use tweezers for precise placement of small elements. Brush oils on meat for shine. Undercook pasta slightly so it looks firmer. Add fresh herbs at the last moment. Keep a spray bottle with water for refreshing wilted ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-title">Reach out!</h2>
+            
+            <div class="contact-info">
+                <h3>Muhammad Luqmannulhakim Bin Rosly</h3>
+                <p>llqmnnhkm@gmail.com</p>
+                <p>6016908192</p>
+            </div>
+            
+            
+            <a href="documents/resume.pdf" class="resume-button">Find my resume here</a>
+        </div>
+    </footer>
+
+    <!-- Debugging script -->
+    <script>
+        // Log any errors that occur during page load
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error('Error: ', message, ' at ', source, ':', lineno);
+            return true;
+        };
+        
+        // Check if images are loading
+        window.addEventListener('load', function() {
+            console.log('Page fully loaded');
+            document.querySelectorAll('img').forEach(function(img) {
+                if (!img.complete || img.naturalHeight === 0) {
+                    console.warn('Image failed to load:', img.src);
+                }
+            });
+        });
+    </script>
+
+    <!-- Load the main scripts -->
+    <script src="js/lifestylescript.js"></script>
+</body>
+</html>

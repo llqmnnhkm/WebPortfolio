@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematography & Landscapes | John Doe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox CSS for gallery images -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">ML</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <!-- Gallery Banner -->
+        <section class="gallery-banner">
+            <div class="banner-content">
+                <h1>Cinematography & Landscapes</h1>
+                <p>Visual explorations in natural beauty and cinematic storytelling</p>
+            </div>
+        </section>
+
+        <!-- Gallery Navigation -->
+        <section class="gallery-navigation">
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="cinema">Images</button>
+                <button class="category-btn" data-category="videos">Videos</button>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid-container">
+            <div class="gallery-grid">
+                <!-- Cinematic Category -->
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/masjidsendayan.jpg" data-lightbox="gallery" data-title="Golden Hour Silhouette">
+                        <img src="images/gallery/masjidsendayan.jpg" alt="Golden Hour Silhouette">
+                        <div class="gallery-overlay">
+                            <h3>Golden Hour Silhouette</h3>
+                            <p>Mosque minarets and dome with dramatic night lighting</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/masjiduum.jpg" data-lightbox="gallery" data-title="Morning Mist">
+                        <img src="images/gallery/masjiduum.jpg" alt="Morning Mist">
+                        <div class="gallery-overlay">
+                            <h3>UUM Mosque Entrance</h3>
+                            <p>Elegant UUM Mosque entrance with Arabic calligraphy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/bukit.jpg" data-lightbox="gallery" data-title="Urban Reflection">
+                        <img src="images/gallery/bukit.jpg" alt="Urban Reflection">
+                        <div class="gallery-overlay">
+                            <h3>Limestone Formation</h3>
+                            <p>Impressive natural rock formation against blue sky</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/burung.jpg" data-lightbox="gallery" data-title="Dramatic Coastline">
+                        <img src="images/gallery/burung.jpg" alt="Dramatic Coastline">
+                        <div class="gallery-overlay">
+                            <h3>Wetland Bird</h3>
+                            <p>Solitary wading bird in lush green marshland</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/ostrich.jpg" data-lightbox="gallery" data-title="Urban Reflection">
+                        <img src="images/gallery/ostrich.jpg" alt="Urban Reflection">
+                        <div class="gallery-overlay">
+                            <h3>Ostriches</h3>
+                            <p>Curious ostriches peering over their enclosure</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="cinema">
+                    <a href="images/gallery/unta.jpg" data-lightbox="gallery" data-title="Dramatic Coastline">
+                        <img src="images/gallery/unta.jpg" alt="Dramatic Coastline">
+                        <div class="gallery-overlay">
+                            <h3>Deer</h3>
+                            <p>Mud-covered deer in its natural habitat</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Videos Category -->
+                <div class="gallery-item" data-category="videos">
+                    <a href="images/gallery/Waterfall.mp4" data-lightbox="video" data-title="Waterfall Cascade">
+                        <img src="images/gallery/waterfall.png" alt="Waterfall Cascade">
+                        <div class="gallery-overlay">
+                            <h3>Waterfall Cascade</h3>
+                            <p>Cinematic slow motion of forest waterfall</p>
+                            <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="videos">
+                    <a href="images/gallery/OceanSeaWaves.mp4" data-lightbox="video" data-title="Ocean Waves">
+                        <img src="images/gallery/oceanwaves.png" alt="Ocean Waves">
+                        <div class="gallery-overlay">
+                            <h3>Ocean Waves</h3>
+                            <p>Aerial view of ocean waves breaking on shore</p>
+                            <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="videos">
+                    <a href="images/gallery/KualaLumpurCityCentre.mp4" data-lightbox="video" data-title="City Timelapse">
+                        <img src="images/gallery/klcc.png" alt="City Timelapse">
+                        <div class="gallery-overlay">
+                            <h3>City Timelapse</h3>
+                            <p>Night view of Kuala Lumpur skyline with Petronas Towers</p>
+                            <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-title">Reach out!</h2>
+            
+            <div class="contact-info">
+                <h3>Muhammad Luqmannulhakim Bin Rosly</h3>
+                <p>llqmnnhkm@gmail.com</p>
+                <p>6016908192</p>
+            </div>
+            
+            <a href="documents/resume.pdf" class="resume-button" target="_blank">Find my resume here</a>
+        </div>
+    </footer>
+
+    <!-- Lightbox JS for gallery images -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
